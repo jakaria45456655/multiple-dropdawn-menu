@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to left,blue,green,red,aqua,rgb(72, 37, 136));
+    font-family: cursive;
+    text-transform: capitalize;
+}
+nav{
+    background-color: red;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+nav ul li:hover{
+    background-color: blue;
+    transition: all linear .5s;
+    border-radius: 5px;
+
+}
+.main_li{
+    position: relative;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 44px;
+    left: 3px;
+    background-color: green;
+    display: none;
+    width: 100px;
+    text-align: center;
+
+}
+nav ul ul li{
+    display: block;
+    width: 100%;
+}
+nav ul ul li:hover{
+    background-color: red;
+}
+nav ul ul li a:hover{
+    background-color: none;
+}
+nav ul .main_li:hover ul{
+    display: block;
+}
+nav ul ul ul {
+    background-color: blue;
+    position: absolute;
+    top: 151px;
+    left: 100px;
+    display: none;
+}
+nav ul ul ul li{
+    text-align: center;
+}
+.two:hover ul{
+    display: block;
+}
